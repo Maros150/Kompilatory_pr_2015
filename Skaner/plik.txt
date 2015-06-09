@@ -6,12 +6,12 @@ wg1e1
 
 
 x1aa23
-x1aa24
+x1aa34
 x1hh34
 x1gg78
 x1ff56
 
-x2aa32
+x2aa54
 x2aa43
 x2hh65
 x2gg76

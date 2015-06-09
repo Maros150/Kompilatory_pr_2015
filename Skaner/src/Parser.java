@@ -282,7 +282,8 @@ public class Parser {
 		aktualny=getToken(Tokens.WspY);			//Y
 		Token lookahead =getToken(Tokens.WspY);	//Y
 		//23,24,32,34
-		if(aktualny.znak!=lookahead.znak-1 && (aktualny.znak=='2' && lookahead.znak!='4'))
+		if(!(aktualny.znak==lookahead.znak-1 || (aktualny.znak=='2' && lookahead.znak=='4')))
+			
 			throw new Exception("B1():Wrong token: expected "+ Tokens.WspY +", was: "+lookahead.token);
 	}
 	private void Q3() throws Exception{
@@ -363,7 +364,7 @@ public class Parser {
 		aktualny=getToken(Tokens.WspY);			//Y
 		Token lookahead =getToken(Tokens.WspY);	//Y
 		//76,75,65,54,43,32,21
-		if(aktualny.znak!=lookahead.znak+1 && (aktualny.znak=='7' && lookahead.znak!='5'))
+		if(!(aktualny.znak==lookahead.znak+1 || (aktualny.znak=='7' && lookahead.znak=='5')))
 			throw new Exception("B1():Wrong token: expected "+ Tokens.WspY +", was: "+lookahead.znak+"-"+aktualny.znak);	
 	}
 	private void Q5() throws Exception{

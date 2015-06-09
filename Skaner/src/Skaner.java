@@ -1,7 +1,6 @@
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.FileWriter;
 import java.util.LinkedList;
 import java.util.Scanner;
 
